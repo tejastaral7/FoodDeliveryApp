@@ -1,0 +1,19 @@
+<ion-menu width="500" [content]="content">
+
+  
+  <ion-content class="masters">
+    <div >
+      <img src="assets/imgs/burger.jpg" class="center">
+    <ion-list>
+      <button class="btn"  ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon name="{{p.icon}}"></ion-icon>
+        {{p.title}}
+      </button>
+    </ion-list>
+  </div>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+

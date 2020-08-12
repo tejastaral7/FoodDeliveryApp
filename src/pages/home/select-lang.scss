@@ -1,0 +1,27 @@
+.food{
+	background: url(../assets/imgs/food1.jpg);
+	background-repeat: no-repeat;
+	background-size:cover !important;
+  
+}
+
+.text{
+	font-size:30px;
+	text-align: center;
+}
+
+label{
+ display : inline;
+ padding-right : 4px;
+ width:100%;
+ font-size: 25px;
+}
+
+select{
+ margin-top : 4px;
+ font-size: 25px;
+}
+
+.button{
+	background-color:#FF4500 !important;
+}

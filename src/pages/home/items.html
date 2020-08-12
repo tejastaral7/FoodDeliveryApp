@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="customColor">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Items</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-list>
+		<button ion-item *ngFor="let i of items" (click)="presentModal()">
+			<ion-avatar item-start>
+				<img src="{{i.image}}">
+			</ion-avatar>
+			<h2>{{i.title}}</h2>
+			<p>{{i.itemInfo}}</p>
+			<ion-badge item-end>{{i.price}}</ion-badge>
+		</button>
+	</ion-list>
+</ion-content>

@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar color="customColor">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Menu</ion-title>
+    <ion-buttons end>
+    	<ion-icon style="font-size: 30px;color:white;" name="cart"></ion-icon>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+<img  src="assets/imgs/menu.jpg" class="big-img">
+<ion-list>
+	<button ion-item (click)="getItems()">
+		<ion-thumbnail item-start>
+      <img src="assets/imgs/burger2.jpg">
+    </ion-thumbnail>
+    <h2>Burger</h2>
+	</button>
+	<button ion-item>
+		<ion-thumbnail item-start>
+      <img src="assets/imgs/chinese.jpg">
+    </ion-thumbnail>
+    <h2>Chinese</h2>
+	</button >
+	<button ion-item>
+		<ion-thumbnail item-start>
+      <img src="assets/imgs/coffee.jpg">
+    </ion-thumbnail>
+    <h2>Coffee</h2>
+	</button >
+	<button ion-item>
+		<ion-thumbnail item-start>
+      <img src="assets/imgs/desserts.jpg">
+    </ion-thumbnail>
+    <h2>Desserts</h2>
+	</button >
+    <button ion-item>
+		<ion-thumbnail item-start>
+      <img src="assets/imgs/ice-cream.jpg">
+    </ion-thumbnail>
+    <h2>IceCreams</h2>
+	</button >
+</ion-list>
+
+</ion-content>

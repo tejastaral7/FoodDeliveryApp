@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar color="customColor">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Your Info</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<div text-center>
+<img src="assets/imgs/burger1.png" class="center">
+<h1>Welcome To App</h1>
+<h6>Give Your Information</h6>
+<ion-list>
+	<ion-item>
+    	<ion-input placeholder="Full Name*" clearInput></ion-input>
+  </ion-item>
+	<ion-item>
+    <ion-input type="email" placeholder="Email Address*" clearInput></ion-input>
+  </ion-item>
+	<ion-item>
+    <ion-input placeholder="Mobile Number*" clearInput></ion-input>
+  </ion-item>
+	<ion-item>
+    <ion-input type="text" onfocus="(this.type='date')" placeholder="Date*" clearInput></ion-input>
+  </ion-item>
+	<ion-item>
+    <ion-input type="text" onfocus="(this.type='time')" placeholder="Time*" clearInput></ion-input>
+  </ion-item>
+	<ion-item>
+    <ion-input placeholder="Location Address*" clearInput></ion-input>
+  </ion-item>
+</ion-list>
+<button class="button" ion-button (click)="openMenu()" round>Go</button>
+</div>
+</ion-content>

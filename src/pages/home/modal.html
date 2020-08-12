@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="customColor">
+    <ion-buttons start>
+      <button style="font-size: 30px;color:white;" ion-button (click) = "pop()" >
+      <ion-icon name="close"></ion-icon>
+    </button>
+    </ion-buttons>
+    <ion-title text-center>Details</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content text-center>
+	<img style="display: block;width:100%" src="{{items.data[0].image}}">
+	<h1>{{items.data[0].title}}</h1>
+	<ion-badge >{{items.data[0].price}}</ion-badge>
+	<p>{{items.data[0].itemInfo}}</p>
+	<button style="font-size: 25px;"  (click)="incrCount()"><ion-icon name="add"></ion-icon></button>
+	<span style="font-size: 25px;font-weight: bold;">{{items.data[0].count}}</span>
+	<button style="font-size: 25px;" (click)="decrCount()"><ion-icon name="remove"></ion-icon></button><br><br>
+	<button class="button" ion-button round>Add To Cart</button>
+</ion-content>
